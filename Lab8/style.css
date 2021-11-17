@@ -1,0 +1,20 @@
+body{
+  background-image:url(backgroung.jpg);background-size:auto;
+}
+h1{
+  color:white;
+  font-family:fantasy;
+}
+h2{
+  color:white;
+  font-family:fantasy;
+}
+p{
+  color:white;
+}
+a{
+  color:white;
+}
+a:hover{
+  color:LightSkyBlue;
+}
