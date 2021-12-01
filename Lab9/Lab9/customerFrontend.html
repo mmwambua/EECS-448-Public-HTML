@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6012e3eb2a.js"crossorigin="anonymous"></script>
+    <script src="formChecker.js" charset="utf-8"></script>
+    <title>Moose Store</title>
+  </head>
+  <body style="background-color: #f5f5f5">
+    <div class="storeTitle">
+      <h1>Moose Store</h1>
+      <h2 id="numItems" style="color:black;position:absolute; right:110px;top:25px;"></h2>
+      <i class="fas fa-shopping-cart fa-lg" style="position:absolute; right:80px;top:50px;"></i>
+    </div>
+    <div>
+      <div class="items" style="margin-left:45px;">
+        <img src="lakersjersey.jpg" class="ShopImage">
+        <h3>2021-22 City Edition Jersey | Los Angeles Lakers</h3>
+        <h3 style="text-align: center;">$199.99</h3>
+        <button class="cart" onclick="addToCartL()">Add to Cart</button>
+      </div>
+      <div class="items">
+        <img src="76ersjersey.jpg" class="ShopImage">
+        <h3>2021-22 City Edition Jersey | Philadelphia 76ers</h3>
+        <h3 style="text-align: center;">$149.99</h3>
+        <button class="cart" onclick="addToCart76ers()">Add to Cart</button>
+      </div>
+      <div class="items">
+        <img src="netsjersey.jpg" class="ShopImage">
+        <h3>2021-22 City Edition Jersey | Brooklyn Nets</h3>
+        <h3 style="text-align: center;">$109.99</h3>
+        <button class="cart" onclick="addToCartN()">Add to Cart</button>
+      </div>
+    </div>
+    <div class="ShipSubmit">
+      <h3>Select Your Shipping:</h3>
+      <input type="radio" id="free" name="ship" value="0">
+      <label for="free">Free 7 Day</label>
+      <input type="radio" id="night" name="ship" value="50">
+      <label for="night">$50.00 Over Night</label>
+      <input type="radio" id="3" name="ship" value="5">
+      <label for="3">$5.00 Three Day</label>
+    </div>
+    <div style="padding-top:20px;">
+      <button class="cart" onclick="Submit()">Submit</button>
+    </div>
+  </body>
+</html>
